@@ -154,7 +154,6 @@
   <ItemGroup>
     <None Include="InputImages\README.md" />
     <None Include="libs\README.md" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="img\Picture1.png" />

@@ -49,7 +49,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
     <None Include="InputImages\README.md" />
     <None Include="libs\README.md" />
   </ItemGroup>
