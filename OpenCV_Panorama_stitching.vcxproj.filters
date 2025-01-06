@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libs\cylinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\divideImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\findHomography.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\findMatches.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\frameSize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\imageTransformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\parallel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\readImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\stitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="InputImages\README.md" />
+    <None Include="libs\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="InputImages\ISTANBUL\Image.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\DEI\Image.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT1\padova_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT2\portello_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\LNSRT3\unipd_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\MYHOUSE\Image.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT1\padova_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT2\portello_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\NRT3\unipd_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT1\padova_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT2\portello_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\RT3\unipd_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\6.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\7.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\8.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\9.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT1\padova_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT2\portello_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\SRT3\unipd_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T1\padova_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T2\portello_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch00.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch01.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch02.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InputImages\T3\unipd_patch22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture9.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture12.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture13.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture14.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture15.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture16.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture17.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture18.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture19.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture20.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture22.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture23.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture24.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\Picture25.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

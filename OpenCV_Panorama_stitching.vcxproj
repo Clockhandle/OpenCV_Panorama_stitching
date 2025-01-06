@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{71567028-d0f0-440a-9c53-3792bd031830}</ProjectGuid>
+    <RootNamespace>OpenCVPanoramastitching</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\install\x64\vc17\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D:\install\x64\vc17\lib\opencv_img_hash4100.lib;D:\install\x64\vc17\lib\opencv_world4100.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\install\x64\vc17\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_img_hash4100.lib;opencv_world4100.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="libs\cylinder.h" />
+    <ClInclude Include="libs\divideImage.h" />
+    <ClInclude Include="libs\findHomography.h" />
+    <ClInclude Include="libs\findMatches.h" />
+    <ClInclude Include="libs\frameSize.h" />
+    <ClInclude Include="libs\imageTransformation.h" />
+    <ClInclude Include="libs\parallel.h" />
+    <ClInclude Include="libs\readImage.h" />
+    <ClInclude Include="libs\stitch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InputImages\README.md" />
+    <None Include="libs\README.md" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\Picture1.png" />
+    <Image Include="img\Picture10.jpg" />
+    <Image Include="img\Picture12.png" />
+    <Image Include="img\Picture13.jpg" />
+    <Image Include="img\Picture14.jpg" />
+    <Image Include="img\Picture15.jpg" />
+    <Image Include="img\Picture16.jpg" />
+    <Image Include="img\Picture17.jpg" />
+    <Image Include="img\Picture18.jpg" />
+    <Image Include="img\Picture19.jpg" />
+    <Image Include="img\Picture2.png" />
+    <Image Include="img\Picture20.jpg" />
+    <Image Include="img\Picture21.jpg" />
+    <Image Include="img\Picture22.jpg" />
+    <Image Include="img\Picture23.jpg" />
+    <Image Include="img\Picture24.jpg" />
+    <Image Include="img\Picture25.jpg" />
+    <Image Include="img\Picture3.jpg" />
+    <Image Include="img\Picture4.png" />
+    <Image Include="img\Picture5.png" />
+    <Image Include="img\Picture6.png" />
+    <Image Include="img\Picture7.png" />
+    <Image Include="img\Picture8.png" />
+    <Image Include="img\Picture9.jpg" />
+    <Image Include="InputImages\DEI\Image.jpg" />
+    <Image Include="InputImages\ISTANBUL\Image.jpg" />
+    <Image Include="InputImages\LNSRT1\padova.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch00.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch01.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch02.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch10.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch11.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch12.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch20.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch21.jpg" />
+    <Image Include="InputImages\LNSRT1\padova_patch22.jpg" />
+    <Image Include="InputImages\LNSRT2\portello.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch00.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch01.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch02.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch10.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch11.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch12.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch20.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch21.jpg" />
+    <Image Include="InputImages\LNSRT2\portello_patch22.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch00.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch01.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch02.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch10.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch11.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch12.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch20.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch21.jpg" />
+    <Image Include="InputImages\LNSRT3\unipd_patch22.jpg" />
+    <Image Include="InputImages\MYHOUSE\Image.jpg" />
+    <Image Include="InputImages\NRT1\padova.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch00.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch01.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch02.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch10.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch11.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch12.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch20.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch21.jpg" />
+    <Image Include="InputImages\NRT1\padova_patch22.jpg" />
+    <Image Include="InputImages\NRT2\portello.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch00.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch01.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch02.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch10.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch11.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch12.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch20.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch21.jpg" />
+    <Image Include="InputImages\NRT2\portello_patch22.jpg" />
+    <Image Include="InputImages\NRT3\unipd.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch00.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch01.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch02.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch10.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch11.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch12.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch20.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch21.jpg" />
+    <Image Include="InputImages\NRT3\unipd_patch22.jpg" />
+    <Image Include="InputImages\RT1\padova.jpg" />
+    <Image Include="InputImages\RT1\padova_patch00.jpg" />
+    <Image Include="InputImages\RT1\padova_patch01.jpg" />
+    <Image Include="InputImages\RT1\padova_patch02.jpg" />
+    <Image Include="InputImages\RT1\padova_patch10.jpg" />
+    <Image Include="InputImages\RT1\padova_patch11.jpg" />
+    <Image Include="InputImages\RT1\padova_patch12.jpg" />
+    <Image Include="InputImages\RT1\padova_patch20.jpg" />
+    <Image Include="InputImages\RT1\padova_patch21.jpg" />
+    <Image Include="InputImages\RT1\padova_patch22.jpg" />
+    <Image Include="InputImages\RT2\portello.jpg" />
+    <Image Include="InputImages\RT2\portello_patch00.jpg" />
+    <Image Include="InputImages\RT2\portello_patch01.jpg" />
+    <Image Include="InputImages\RT2\portello_patch02.jpg" />
+    <Image Include="InputImages\RT2\portello_patch10.jpg" />
+    <Image Include="InputImages\RT2\portello_patch11.jpg" />
+    <Image Include="InputImages\RT2\portello_patch12.jpg" />
+    <Image Include="InputImages\RT2\portello_patch20.jpg" />
+    <Image Include="InputImages\RT2\portello_patch21.jpg" />
+    <Image Include="InputImages\RT2\portello_patch22.jpg" />
+    <Image Include="InputImages\RT3\unipd.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch00.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch01.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch02.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch10.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch11.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch12.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch20.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch21.jpg" />
+    <Image Include="InputImages\RT3\unipd_patch22.jpg" />
+    <Image Include="InputImages\SRT1\1.jpg" />
+    <Image Include="InputImages\SRT1\2.jpg" />
+    <Image Include="InputImages\SRT1\3.jpg" />
+    <Image Include="InputImages\SRT1\4.jpg" />
+    <Image Include="InputImages\SRT1\5.jpg" />
+    <Image Include="InputImages\SRT1\6.jpg" />
+    <Image Include="InputImages\SRT1\7.jpg" />
+    <Image Include="InputImages\SRT1\8.jpg" />
+    <Image Include="InputImages\SRT1\9.jpg" />
+    <Image Include="InputImages\SRT1\padova.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch00.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch01.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch02.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch10.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch11.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch12.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch20.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch21.jpg" />
+    <Image Include="InputImages\SRT1\padova_patch22.jpg" />
+    <Image Include="InputImages\SRT2\portello.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch00.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch01.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch02.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch10.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch11.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch12.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch20.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch21.jpg" />
+    <Image Include="InputImages\SRT2\portello_patch22.jpg" />
+    <Image Include="InputImages\SRT3\unipd.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch00.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch01.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch02.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch10.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch11.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch12.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch20.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch21.jpg" />
+    <Image Include="InputImages\SRT3\unipd_patch22.jpg" />
+    <Image Include="InputImages\T1\padova.jpg" />
+    <Image Include="InputImages\T1\padova_patch00.jpg" />
+    <Image Include="InputImages\T1\padova_patch01.jpg" />
+    <Image Include="InputImages\T1\padova_patch02.jpg" />
+    <Image Include="InputImages\T1\padova_patch10.jpg" />
+    <Image Include="InputImages\T1\padova_patch11.jpg" />
+    <Image Include="InputImages\T1\padova_patch12.jpg" />
+    <Image Include="InputImages\T1\padova_patch20.jpg" />
+    <Image Include="InputImages\T1\padova_patch21.jpg" />
+    <Image Include="InputImages\T1\padova_patch22.jpg" />
+    <Image Include="InputImages\T2\portello.jpg" />
+    <Image Include="InputImages\T2\portello_patch00.jpg" />
+    <Image Include="InputImages\T2\portello_patch01.jpg" />
+    <Image Include="InputImages\T2\portello_patch02.jpg" />
+    <Image Include="InputImages\T2\portello_patch10.jpg" />
+    <Image Include="InputImages\T2\portello_patch11.jpg" />
+    <Image Include="InputImages\T2\portello_patch12.jpg" />
+    <Image Include="InputImages\T2\portello_patch20.jpg" />
+    <Image Include="InputImages\T2\portello_patch21.jpg" />
+    <Image Include="InputImages\T2\portello_patch22.jpg" />
+    <Image Include="InputImages\T3\unipd.jpg" />
+    <Image Include="InputImages\T3\unipd_patch00.jpg" />
+    <Image Include="InputImages\T3\unipd_patch01.jpg" />
+    <Image Include="InputImages\T3\unipd_patch02.jpg" />
+    <Image Include="InputImages\T3\unipd_patch10.jpg" />
+    <Image Include="InputImages\T3\unipd_patch11.jpg" />
+    <Image Include="InputImages\T3\unipd_patch12.jpg" />
+    <Image Include="InputImages\T3\unipd_patch20.jpg" />
+    <Image Include="InputImages\T3\unipd_patch21.jpg" />
+    <Image Include="InputImages\T3\unipd_patch22.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
